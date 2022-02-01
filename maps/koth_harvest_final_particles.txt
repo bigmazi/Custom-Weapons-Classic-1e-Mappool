@@ -1,0 +1,16 @@
+particles_manifest
+{
+	file	"particles/bfg.pcf"
+	file	"particles/bfg_teamcolor.pcf"
+	file	"particles/cwp_altered_expl.pcf"
+	file	"particles/cwp_expensive_expl.pcf"
+	file	"particles/cwp_fiery_expl.pcf"
+	file	"particles/cwp_improved_expl.pcf"
+	file	"particles/def_pier_fx_fw_light.pcf"
+	file	"particles/halloween.pcf"
+	file	"particles/hween2019_light.pcf"
+	file	"particles/hween2020_light.pcf"
+	file	"particles/live_utaunt_light.pcf"
+	file	"particles/pier_fx_fw_light.pcf"
+	file	"particles/xmas2019_light.pcf"
+}

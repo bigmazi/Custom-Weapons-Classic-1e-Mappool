@@ -882,7 +882,7 @@ Carrier: bolts stick to enemies on direct hits"
 				"custom projectile model"    	"models/weapons/cwp/crossbow/bolt.mdl"
 				"class select override vcd"		"taunt01"
 				
-				"Reload time increased CUSTOM HIDDEN" "0.87"
+				//"Reload time increased CUSTOM HIDDEN" "0.87"
             }
 			"visuals"
 			{
@@ -1149,7 +1149,7 @@ While scoped-in: cannot disguise, marked for death, loses cloak charge over time
 			"item_class"				"tf_weapon_smg"
 			"item_type_name"			"Carbine"
 			"item_name"					"Carbine"
-			"item_iconname"				"carbine"
+			"item_iconname"				"carbine_new"
 			"item_slot"					"secondary"
 			"item_description"			"Aim, shoot, repeat"
 			"item_quality"				"unique"

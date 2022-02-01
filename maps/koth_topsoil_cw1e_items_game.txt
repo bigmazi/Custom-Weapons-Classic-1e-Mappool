@@ -882,7 +882,7 @@ Carrier: bolts stick to enemies on direct hits"
 				"custom projectile model"    	"models/weapons/cwp/crossbow/bolt.mdl"
 				"class select override vcd"		"taunt01"
 				
-				"Reload time increased CUSTOM HIDDEN" "0.87"
+				//"Reload time increased CUSTOM HIDDEN" "0.87"
             }
 			"visuals"
 			{
