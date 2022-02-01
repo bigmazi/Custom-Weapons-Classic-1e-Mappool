@@ -1,3 +1,167 @@
+"announcer.chembomb_close"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_bomb_alerts03.mp3"
+		"wave"	"vo/mvm_bomb_alerts04.mp3"
+		"wave"	"vo/mvm_bomb_alerts05.mp3"
+		"wave"	"vo/mvm_bomb_alerts08.mp3"
+		"wave"	"vo/mvm_bomb_alerts09.mp3"
+		"wave"	"vo/mvm_bomb_alerts10.mp3"
+		"wave"	"vo/mvm_bomb_alerts11.mp3"
+		"wave"	"vo/mvm_bomb_alerts12.mp3"
+		"wave"	"vo/mvm_bomb_alerts13.mp3"
+		"wave"	"vo/mvm_bomb_alerts14.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings09.mp3"
+	}
+}
+
+"announcer.chembomb_entered"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_bomb_alerts01.mp3"
+		"wave"	"vo/mvm_bomb_alerts02.mp3"
+	}
+}	
+
+"announcer.chembomb_entered_repeat"
+{
+	"channel"    	"CHAN_VOICE2"
+	"volume"     	"VOL_NORM"
+	"pitch"      	"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_another_bomb06.mp3"
+		"wave"	"vo/mvm_another_bomb07.mp3"
+		"wave"	"vo/mvm_another_bomb08.mp3"
+		"wave"	"vo/mvm_bomb_alerts01.mp3"
+		"wave"	"vo/mvm_bomb_alerts02.mp3"
+	}
+}
+
+"announcer.chembomb_delivered"
+{
+	"channel"    	"CHAN_VOICE2"
+	"volume"     	"VOL_NORM"
+	"pitch"      	"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_general_destruction01.mp3"
+		"wave"	"vo/mvm_general_destruction02.mp3"
+		"wave"	"vo/mvm_general_destruction03.mp3"
+		"wave"	"vo/mvm_general_destruction04.mp3"
+	}
+}
+
+"announcer.chembomb_delivered_enemy"
+{
+	"channel"    	"CHAN_VOICE2"
+	"volume"     	"VOL_NORM"
+	"pitch"      	"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_wave_lose02.mp3"
+		"wave"	"vo/mvm_wave_lose04.mp3"
+		"wave"	"vo/mvm_wave_lose06.mp3"
+		"wave"	"vo/mvm_wave_lose011.mp3"
+	}
+}
+
+"announcer.chembomb_gamelost"
+{
+	"channel"    "CHAN_VOICE2"
+	"volume"     "VOL_NORM"
+	"pitch"      "PITCH_NORM"
+	"soundlevel" "SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_game_over_loss01.mp3"
+		"wave"	"vo/mvm_game_over_loss02.mp3"
+		"wave"	"vo/mvm_game_over_loss03.mp3"
+		"wave"	"vo/mvm_game_over_loss04.mp3"
+		"wave"	"vo/mvm_game_over_loss05.mp3"
+		"wave"	"vo/mvm_game_over_loss06.mp3"
+		"wave"	"vo/mvm_game_over_loss07.mp3"
+		"wave"	"vo/mvm_game_over_loss08.mp3"
+		"wave"	"vo/mvm_game_over_loss09.mp3"
+		"wave"	"vo/mvm_game_over_loss10.mp3"
+		"wave"	"vo/mvm_game_over_loss11.mp3"
+	}
+}
+
+"announcer.chembomb_gamewon"
+{
+	"channel"    "CHAN_VOICE2"
+	"volume"     "VOL_NORM"
+	"pitch"      "PITCH_NORM"
+	"soundlevel" "SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_final_wave_end01.mp3"
+		"wave"	"vo/mvm_final_wave_end02.mp3"
+		"wave"	"vo/mvm_final_wave_end03.mp3"
+		"wave"	"vo/mvm_final_wave_end04.mp3"
+		"wave"	"vo/mvm_final_wave_end05.mp3"
+		"wave"	"vo/mvm_final_wave_end06.mp3"
+	}
+}
+
+"announcer.chembomb_gamestart"
+{
+	"channel"    "CHAN_VOICE2"
+	"volume"     "VOL_NORM"
+	"pitch"      "PITCH_NORM"
+	"soundlevel" "SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/mvm_wave_start01.mp3"
+		"wave"	"vo/mvm_wave_start02.mp3"
+		"wave"	"vo/mvm_wave_start03.mp3"
+		"wave"	"vo/mvm_firstwave_start03.mp3"
+		"wave"	"vo/mvm_firstwave_start04.mp3"
+	}
+}
+
+"announcer.chembomb_almost_there"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings11.mp3"
+		"wave"	"vo/announcer_plr_racegeneral12.mp3"
+	}
+}
+
+"announcer.chembomb_selfdestruct"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_self_destruct01.mp3"
+		"wave"	"vo/announcer_sd_self_destruct02.mp3"
+		"wave"	"vo/announcer_sd_self_destruct03.mp3"
+	}
+
+}			
+
 // chsaw
 
 "Weapon_ChainSaw.ClipEmpty"	
