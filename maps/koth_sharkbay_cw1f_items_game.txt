@@ -1554,7 +1554,7 @@ Fireballs destroy projectiles. Thunderclap from spawning a fireball extinguishes
 		"7082"
 		{
 "item_description"
-"If NOT crouched, jams after few shots.
+"If NOT crouched, jams after a few shots.
 Always jams when user stops firing.
 
 'Pretty light, perhaps missing its part or two. Matters? Nah, it's Just Awfully Minor.'"
