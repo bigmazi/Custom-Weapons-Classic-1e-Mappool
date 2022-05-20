@@ -1533,7 +1533,8 @@ Fireballs destroy projectiles. Thunderclap from spawning a fireball extinguishes
 				"spread penalty CUSTOM HIDDEN"				"0"
 				"Projectile range decreased CUSTOM HIDDEN"	"0.05"
 				"ragdolls become ash"						"1"
-				"Reload time increased CUSTOM HIDDEN"		"0.5"
+				//"Reload time increased CUSTOM HIDDEN"		"0.5"
+				"Reload time increased CUSTOM HIDDEN"		"0.35"
 				//"Set DamageType Ignite"					"1"
 			}			
 			"visuals"
