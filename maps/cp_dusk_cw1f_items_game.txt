@@ -1,0 +1,2150 @@
+"custom_items_game"
+{
+	"items"
+	{
+		"3346"
+		{
+"item_description"
+"
+Acceleration (available mid-air):
+hold JUMP key
+
+Boost (available on ground):
+CROUCH, then JUMP"
+			"name"				"tf_weapon_engpack"
+			"item_class"		"tf_wearable"
+			"item_logname"		"jetpack"
+			"item_iconname"		"0"
+			"show_in_armory"	"1"
+			"item_type_name"	"Jetpack"
+			"item_name"			"Packed Jet"
+			"item_slot"			"pda"
+			"equip_region"		"back"
+			"anim_slot"			"FORCE_NOT_USED"
+			"image_inventory"	"backpack/weapons/cwp/jetpack/jetpack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"60"			
+			//"model_player"		"models/player/invasion/invasion_jupiter_jetpack.mdl"
+			//"model_player"		"models/weapons/cwp/jetpack/wearable.mdl"
+			//"model_player"		"models/weapons/cwp/jetpack/jet_wearable3.mdl"
+			"model_player"		"models/weapons/cwp/jetpack/jet_space_wearable.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"		"unique"
+			"propername"		"0"
+			"act_as_wearable"	"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					//"backpack"			"1"
+					"hat"			"1"
+				}			
+			}
+			"used_by_classes"
+			{
+				"engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"boots falling stomp" "1"
+			}
+
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"			
+		}
+			
+		"6668"
+		{
+			"name"						"TF_WEAPON_OPPRESSOR"
+			"prefab"					"weapon_shotgun_multiclass"
+			"item_name"					"Oppressor's Suppressor"
+			"item_quality"				"unique"
+			"item_iconname"				"oppressors_suppressor"
+			//"item_description"			"#TF_Weapon_Shotgun_Primary_Desc"
+			"item_slot"					"primary"
+			"image_inventory"			"backpack/weapons/cwp/c_opressor/opss"
+			"model_world"				"models/weapons/cwp/c_opressor/c_opressor.mdl"
+			"model_player"				"models/weapons/cwp/c_opressor/c_opressor.mdl"
+			"attach_to_hands"			"1"
+			"show_in_armory"			"1"
+			"static_attrs"
+			{
+				"weapon spread bonus"			"0.66"
+				"fire rate penalty"				"1.30"
+				//"Reload time increased"			"1.2"
+				"clip size penalty"             "0.83"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Opressor.Single"
+				"sound_burst"			"Weapon_Opressor.SingleCrit"
+				"muzzle_flash"			"muzzle_tranq"
+				"NoMuzzleLight" 		"1"
+				"MuzzleflashModelScale" "0.1"
+			}
+		}
+		
+		// winn
+		"6669"
+		{
+			"name"						"TF_WEAPON_WINN"
+			"prefab"					"weapon_scattergun"
+			"item_name"					"Ricochet"
+			"item_type_name" 			"Rifle"
+			"item_description" 			"Ricochets deal mini-crits"
+			"item_quality"				"unique"
+			"item_iconname"				"winns_lever"
+			"show_in_armory"			"1"
+			"propername"				"0"
+			"image_inventory"			"backpack/weapons/cwp/ricochet/ricochet"
+			"model_world"				"models/weapons/cwp/winn/w_winn.mdl"
+			"model_player"				"models/weapons/cwp/winn/v_winn_cool.mdl"
+			"attach_to_hands"			"2"
+			"static_attrs"
+			{
+				"spread penalty CUSTOM HIDDEN"			"0.05"
+				"centerfire projectile"					"1"
+				"fire rate penalty hidden"				"0.78"
+				//"Reload time increased hidden"			"0.85"
+				"Reload time increased hidden"			"0.65"
+				"clip size penalty hidden"     			"1.67"
+				"bullets per shot bonus CUSTOM HIDDEN"	"0.1"
+				"damage bonus hidden" 					"4.9"
+				"override projectile type"				"30"
+				"projectile speed increased hidden"		"1.4"
+				"maxammo primary reduced CUSTOM HIDDEN"	"1.875"
+				
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_winn1.Single"
+				"sound_burst"			"Weapon_winn1.SingleCrit"
+				"sound_reload"			"Weapon_winn.WorldReload"
+			}
+		}
+		
+		//zenith
+		"5017"
+		{
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"item_logname"				"aagun"
+			"item_iconname"				"anti_aircraft_cannon"
+			"item_name"					"Flak Cannon"
+			"item_type_name"			"#TF_Weapon_AAGun"
+			"item_class"				"tf_weapon_aagun"
+			"item_slot"					"primary"
+			"model_player"				"models/weapons/cwp/zenith/v_zenith.mdl"
+			"model_world"				"models/weapons/cwp/zenith/c_zenith.mdl"
+			"attach_to_hands"			"2"
+			"anim_slot" 				"primary"
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/c_models/c_bofors/c_bofors"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -9"
+				
+				"explosive bullets CUSTOM NEUTRAL"		"1"
+				"override projectile type"				"1"
+				"hidden primary max ammo bonus"			"1.05"
+				"damage bonus hidden"					"0.53"
+				"fire rate penalty hidden"				"0.95"
+				"self dmg push force decreased CUSTOM HIDDEN"	"0.2"
+				"blast dmg to self increased CUSTOM HIDDEN"		"0.75"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+			
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Zenitka.Single"
+				"sound_burst"			"Weapon_Zenitka.SingleCrit"
+			}
+
+		}
+		
+		// ak
+		"5000"
+		{
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_name"					"Soviet Classic"
+			"item_type_name"			"Assault Rifle"
+			"item_description"			"Pull the trigger to shoot"
+			"item_class"				"tf_weapon_scattergun"
+			"item_slot"					"primary"
+			"item_logname"				"ak"
+			"item_iconname"				"soviet_classic"
+			"model_world"				"models/weapons/cwp/c_akm/c_akm_fix.mdl"
+			"model_player"				"models/weapons/cwp/v_akm/v_akm_thumbfix.mdl"
+			"attach_to_hands"			"2"
+			"anim_slot"					"secondary"
+			//"extra_wearable" 			"models/weapons/cwp/gunsniper_wearable/gunsniper_wearable.mdl"
+			"extra_wearable" 			"models/weapons/cwp/sniperwear/wearable.mdl"
+			//"extra_wearable" 			"models/weapons/cwp/sniperwear/commando_wearable.mdl"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/cwp/c_ak/c_ak"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"class select override vcd"				"taunt02_v1"
+				"damage bonus hidden"					"2.6"
+				"fire rate penalty hidden"				"0.19"
+				"bullets per shot bonus CUSTOM HIDDEN"	"0.1"
+				"scattergun no reload single"			"1"
+				"Reload time increased CUSTOM HIDDEN"	"3.2"
+				"spread penalty CUSTOM HIDDEN"			"0.68"
+				"crit mod disabled CUSTOM HIDDEN"		"1"
+				
+				//"clip size penalty HIDDEN"				"5" //30
+				"clip size penalty HIDDEN"				"6.67" //40
+				
+				//"hidden primary max ammo bonus"			"2.8125" //30
+				"hidden primary max ammo bonus"			"3.4375" //40
+			}
+			"visuals"
+			{
+				"sound_empty"			"Weapon_Smg.ClipEmpty"	
+				"sound_single_shot"		"Weapon_Ak.Single"
+				"sound_burst"			"Weapon_Ak.SingleCrit"
+				"sound_reload"			"Weapon_Smg.WorldReload"
+				"player_bodygroups"
+				{
+					//"backpack"			"1"
+					"hat"			"1"
+				}	
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		//mortar
+		"5013"
+		{
+"item_description"
+"Bombs gain power while falling down: damage, radius, knockback
+
+BLAST-JUMP: jump right before your bomb fall onto the ground near you
+
+'Shoot the sky'"
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"item_logname"				"mortar"
+			"item_iconname"				"mortar"
+			"item_name"					"Mortar"
+			"item_type_name"			"Artillery Piece"
+			"item_class"				"tf_weapon_aagun"
+			"item_slot"					"primary"
+			"model_world"				"models/weapons/cwp/mortar/c_mortar.mdl"
+			"model_player"				"models/weapons/cwp/mortar/v_mortar.mdl"
+			"attach_to_hands"			"2"
+			"anim_slot" 				"primary"
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/c_models/c_browning/c_browning"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -9"
+				
+				"centerfire projectile"                         "1"
+				"fire rate penalty hidden"						"2.66"
+				"projectile speed increased hidden"				"1.5"
+				"rocket gravity CUSTOM HIDDEN"					"3.2"
+				"self dmg push force decreased CUSTOM HIDDEN"	"0.224"
+				"Blast radius decreased CUSTOM HIDDEN"			"2"
+				"hidden primary max ammo bonus"					"0.5"
+				"blast dmg to self increased CUSTOM HIDDEN"     "0.75"
+				"custom projectile model"		"models/weapons/cwp/w_mbomb/w_mbomb.mdl"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+			
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_PRIMARYATTACK"	"ACT_PRIMARY_VM_SECONDARYATTACK"
+				}
+				"sound_single_shot"		"Weapon_Mortar.Single"
+				"sound_burst"			"Weapon_Mortar.SingleCrit"
+			}
+
+		}
+		
+		//extra_shot_mkii
+		"5007"
+		{
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_logname"				"extra_shot"
+			"item_iconname"				"extra_shot"
+			"item_name"					"Extra Shot"
+			"item_description"			"The title says it all"
+			"item_class"				"tf_weapon_pistol"
+			"item_type_name"			"Handgun"
+			"item_slot"					"secondary"
+			"model_world"				"models/weapons/cwp/extra/c_extra.mdl"
+			"model_player"				"models/weapons/cwp/extra/v_extra.mdl"
+			"attach_to_hands"			"2"
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/c_models/c_extra/c_extra"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"anim_slot"					"secondary"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -10"
+				
+				"bullets per shot bonus CUSTOM HIDDEN"	"10"
+				"damage bonus hidden"					"0.29"
+				"fire rate penalty hidden"				"2"
+				"clip size penalty HIDDEN"				"0.167"
+				"hidden secondary max ammo penalty"		"0.23"
+				"spread penalty CUSTOM HIDDEN"			"1.75"
+			}
+			"visuals"
+			{
+				"sound_empty"							"Weapon_Shotgun.ClipEmpty"	
+				"sound_single_shot"						"Weapon_Extra_Shot.Single"
+				"sound_burst"							"Weapon_Extra_Shot.SingleCrit"
+				"sound_reload"							"Weapon_Pistol.WorldReload"
+				"animation_replacement"
+				{
+					"ACT_VM_IDLE"							"ACT_SECONDARY_VM_IDLE_2"
+					"ACT_VM_DRAW"							"ACT_SECONDARY_VM_DRAW_2"
+					"ACT_VM_PRIMARYATTACK"					"ACT_SECONDARY_VM_PRIMARYATTACK_2"
+					"ACT_VM_RELOAD"							"ACT_SECONDARY_VM_RELOAD_2"
+					"ACT_MP_RELOAD_STAND"					"ACT_MP_RELOAD_STAND_SECONDARY"
+					"ACT_MP_RELOAD_CROUCH"					"ACT_MP_RELOAD_CROUCH_SECONDARY"
+					"ACT_MP_RELOAD_SWIM"					"ACT_MP_RELOAD_SWIM_SECONDARY"
+					"ACT_MP_RELOAD_AIRWALK"					"ACT_MP_RELOAD_AIRWALK_SECONDARY"
+				}
+				"muzzle_flash"				"muzzle_scattergun"
+				"tracer_effect"				"bullet_scattergun_tracer01"
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		
+		//chainsaw
+		"5020"
+		{
+"item_description"
+"
+Lifesteal: a fraction of damage dealt returns as health
+
+On hit: enemy gets slowed and bleeds"
+			"prefab"					"weapon_minigun"
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"propername"				"0"
+			"item_name"					"Chainsaw"
+			"item_type_name"			"Chainsaw"
+			"item_logname"				"chainsaw"
+			"item_iconname"				"timber_saw"
+			"image_inventory"			"backpack/weapons/w_models/w_chainsaw"
+			"model_world"				"models/weapons/cwp/chainsaw/w_chainsaw.mdl"
+			"model_player"				"models/weapons/cwp/chainsaw/v_chainsaw_heavy.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 -3 -7"
+			
+				"provide on active"				"1"
+				"move speed bonus"				"1.65"
+				"minigun spinup time increased CUSTOM HIDDEN"	"0.55"
+				"tranq on hit CUSTOM HIDDEN"					"1"
+				"bleeding duration CUSTOM HIDDEN"				"3"
+				"aiming movespeed increased CUSTOM HIDDEN"	"1.8"
+				"aiming movespeed increased CUSTOM HIDDEN"	"2"
+				"spread penalty CUSTOM HIDDEN"				"3"
+				"Projectile range decreased CUSTOM HIDDEN"	"0.02"
+				"bullets per shot bonus CUSTOM HIDDEN"	"4"
+				//"dmg penalty vs buildings CUSTOM HIDDEN"	"1.8"
+				"dmg penalty vs buildings CUSTOM HIDDEN"	"1.5"
+				//"damage bonus hidden"				"0.081"
+				//"damage bonus hidden"				"0.09259259259"
+				"damage bonus hidden"				"0.08333333333"
+			}
+			"visuals"
+			{
+				"sound_empty"			"Weapon_Chainsaw.ClipEmpty"
+				"sound_double_shot"		"Weapon_Chainsaw.Fire"
+				"sound_burst"			"Weapon_Chainsaw.FireCrit"
+				"sound_special1"		"Weapon_Chainsaw.WindUp"
+				"sound_special2"		"Weapon_Chainsaw.WindDown"
+				"sound_special3"		"Weapon_Chainsaw.Rev"
+				
+				"tracer_effect"	""
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		//romero
+		"6670"
+		{
+			"name"						"TF_WEAPON_ROMERO"
+			"prefab"					"weapon_scattergun"
+			"show_in_armory"			"1"
+			"propername"				"0"
+			"item_quality"				"unique"
+			"item_name"					"Lucky Strike"
+			"item_type_name"			"#TF_weapon_shotgun"
+			"item_description"			"Bigger, Longer, Uncut"
+			"item_logname"				"romero"
+			"item_iconname"				"lucky_strike"
+			"anim_slot" 				"primary"
+			"image_inventory"			"backpack/weapons/c_models/romero"
+			"model_world"				"models/weapons/cwp/w_romero/w_romero.mdl"
+			"model_player"				"models/weapons/cwp/v_romero/v_romero_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				//"class select override vcd"				"class_select_nailgun"
+				"class select override vcd"				"taunt01_vocal01"
+				"provide on active CUSTOM HIDDEN"		"1"	
+				"bullets per shot bonus CUSTOM HIDDEN"	"7"
+				"spread penalty CUSTOM HIDDEN"			"1.9"			
+				"damage bonus HIDDEN" 					"0.29"
+				//"damage bonus HIDDEN" 					"0.237"
+				//"damage bonus HIDDEN" 					"0.327"
+				"clip size penalty hidden"				"0.1"
+				"reload time increased hidden"			"3.48"
+				"scattergun no reload single" 			"1"
+				"fire rate penalty hidden"				"0.8"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Scatter_Gun_Double.Single"
+				"sound_burst"			"Weapon_Scatter_Gun_Double.SingleCrit"
+				"sound_reload"			"Weapon_DoubleBarrel.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		// fworks2
+		"5012"
+		{
+"item_description"
+"Manually detonated fireworks deal MINICRIT
+
+How to detonate fireworks manually:
+ignite any enemy near them
+
+Holding ALT-FIRE: enables self-damage
+(use it for blast-jumps)"
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"item_logname"				"fireworks"
+			"item_iconname"				"fireworks"
+			"item_name"					"Fireworks"
+			"item_class"				"tf_weapon_smg"
+			"item_type_name"			"Fireworks Cannon"
+			"item_slot"					"secondary"
+			"image_inventory"			"backpack/weapons/cwp/fireworks/fireworks"
+			"attach_to_hands"			"2"
+			"anim_slot"					"secondary"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"propername"				"0"
+			"model_world"				"models/weapons/cwp/fireworks/c_fireworks.mdl"
+			"model_player"				"models/weapons/cwp/fireworks/v_fireworks.mdl"
+
+			"used_by_classes"
+			{
+				"pyro"				"1"
+			}
+			"static_attrs"
+			{
+				"clip size penalty HIDDEN"					"0.35"
+				"fire rate penalty hidden"					"0.8"	
+				"maxammo secondary reduced CUSTOM HIDDEN"	"0.48"
+				"override projectile type"					"4"
+				"spread penalty CUSTOM HIDDEN"				"3.2"
+				"Projectile speed increased CUSTOM HIDDEN" 	"6"
+				"blast dmg to self increased CUSTOM HIDDEN"	"0.8"
+				
+				"min_viewmodel_offset"	"10 0 -10"
+				"custom projectile model"	"models/weapons/cwp/w_cake/w_cake.mdl"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Stherm.Single"
+				"sound_burst"			"Weapon_Stherm.SingleCrit"
+				"sound_special1"		"Weapon_Stherm.Explode"
+				"sound_reload"			"none"
+			}	
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"	
+		}
+		
+		//sewing
+		"5014"
+		{
+"item_description"
+"Projectiles penetrate enemies"
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_name"					"Sewing Machine"
+			"item_type_name"			"Anti-Aircraft Machine Gun"
+			"item_class"				"tf_weapon_minigun"
+			"item_slot"					"primary"
+			"item_logname"				"sewing"
+			"item_iconname"				"sewing_machine"
+			"image_inventory"			"backpack/weapons/c_models/c_sewing/c_sewing"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+			"model_player"				"models/weapons/cwp/c_sewing/c_sewing.mdl"
+			//"model_player"				"models/weapons/cwp/v_sewing/v_sewing.mdl"
+			"attach_to_hands"			"1"
+			"anim_slot"					"primary"
+			"static_attrs"
+            {
+                "min_viewmodel_offset" "10 0 -9"
+				
+				//"projectile penetration"				"1"
+                "damage bonus hidden"                	"3"
+                "fire rate penalty hidden"           	"1.6"
+                "hidden primary max ammo bonus"    		"0.625"
+                "override projectile type"            	"30"
+				"spread penalty CUSTOM HIDDEN"          "0.18"
+            }
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"visuals"
+			{
+				"sound_double_shot"	"Weapon_Sewing.Fire"
+				"sound_burst"		"Weapon_Sewing.FireCrit"
+				"sound_special1"	"Weapon_Sewing.WindUp"
+				"sound_special2"	"Weapon_Sewing.WindDown"
+				"sound_special3"	"Weapon_Sewing.Spin"
+			}
+		}
+		// thermo
+		"6672"
+		{
+"item_description"
+"Thermite bombs get activated shortly after contact with surface or enemy
+
+Direct hits knock enemies back
+
+ALT-FIRE: smoke puff that extinguishes allies"
+			"name"						"TF_WEAPON_THERMO"
+			"item_class"				"tf_weapon_grenadelauncher"
+			"item_type_name"			"Thermite Bomb Launcher"
+			"item_name"					"Thermite Blower"
+			"item_iconname"				"thermite_blower"
+			"model_player"				"models/weapons/cwp/thermblower/v_thermblower.mdl"
+			"model_world" 				"models/weapons/cwp/thermblower/c_thermblower.mdl"
+			"image_inventory" 			"backpack/weapons/cwp/thblower/thblower"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"item_slot"					"primary"
+			"anim_slot"					"primary"
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"used_by_classes"
+			{
+				"pyro"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"reload time increased hidden"			"0.37"
+				"clip size penalty HIDDEN" 				"0.25"
+				"fire rate penalty hidden" 				"1.25"
+				"maxammo primary reduced CUSTOM HIDDEN" "1.25"
+			}
+			
+			"visuals"
+			{
+				"sound_single_shot"						"Weapon_Thermite.Single"
+				"sound_burst" 							"Weapon_Thermite.SingleCrit"
+				"sound_reload" 							"none"
+				
+				"animation_replacement"
+				{
+					"ACT_VM_PRIMARYATTACK"			"ACT_PRIMARY_VM_SECONDARYATTACK"
+					"ACT_MP_ATTACK_STAND_PRIMARY"	"ACT_MP_ATTACK_STAND_SECONDARYFIRE"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"	"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
+				}
+			}
+			
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"			
+		}
+		
+		//amr
+		"5001"
+		{
+"item_description"
+"Charging increases damage
+
+Earthquake: fully charged ground-shots cause self-knockback through earthquake"
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_name"					"Anti-Materiel Rifle"
+			"item_type_name"			"Heavy Rifle"
+			"item_class"				"tf_weapon_compound_bow"
+			"item_slot"					"primary"
+			"item_logname"				"heavy_rifle"
+			"item_iconname"				"anti_material_rifle"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/c_models/c_atgun/c_atgun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+			"model_world"				"models/weapons/cwp/c_atgun/c_atgun_fix.mdl"
+			"model_player"				"models/weapons/cwp/v_atgun/v_atgun_fix.mdl"
+			"attach_to_hands"			"2"
+			"anim_slot"					"item2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"class select override vcd"	"taunt01_v1"
+				//"class select override vcd"	"class_select_shotgun"
+				"custom projectile model"	"models/weapons/w_models/w_nail.mdl"
+				
+				"fire rate penalty hidden"					"0.6"
+				"mod max primary clip override" 			"4"
+				"hidden primary max ammo bonus"				"1.67"
+				"override projectile type"					"30"
+				"aiming movespeed increased CUSTOM HIDDEN"	"0.69"
+				"reload time increased hidden"				"1.45"
+				"Projectile speed increased hidden"			"1.25"
+
+			}
+			"visuals"
+			{
+				"sound_empty"								"Weapon_Shotgun.ClipEmpty"	
+				"sound_single_shot"							"Weapon_amr.single"
+				"sound_burst"								"Weapon_amr.crit"
+				"animation_replacement"
+				{
+					"ACT_VM_IDLE"							"ACT_SECONDARY_VM_IDLE"
+					"ACT_VM_DRAW"							"ACT_SECONDARY_VM_DRAW"
+					"ACT_VM_RELOAD"							"ACT_SECONDARY_VM_PRIMARYATTACK"
+					"ACT_VM_PRIMARYATTACK"					"ACT_SECONDARY_VM_PRIMARYATTACK"
+					
+					"ACT_MP_ATTACK_STAND_ITEM2"				"ACT_MP_ATTACK_STAND_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_ITEM2"			"ACT_MP_ATTACK_CROUCH_PRIMARY"
+					
+					"ACT_MP_STAND_ITEM2"					"ACT_MP_STAND_SECONDARY"
+					"ACT_MP_CROUCH_ITEM2"					"ACT_MP_CROUCH_SECONDARY"
+					
+					"ACT_MP_RUN_ITEM2"						"ACT_MP_RUN_SECONDARY"
+					"ACT_MP_CROUCHWALK_ITEM2"				"ACT_MP_CROUCHWALK_SECONDARY"
+					"ACT_MP_AIRWALK_ITEM2"					"ACT_MP_AIRWALK_SECONDARY"
+					"ACT_MP_SWIM_ITEM2"						"ACT_MP_SWIM_SECONDARY"
+					
+					"ACT_MP_JUMP_START_ITEM2"				"ACT_MP_JUMP_START_SECONDARY"
+					"ACT_MP_JUMP_FLOAT_ITEM2"				"ACT_MP_JUMP_FLOAT_SECONDARY"
+					"ACT_MP_JUMP_LAND_ITEM2"				"ACT_MP_JUMP_LAND_SECONDARY"
+					
+					"ACT_MP_DEPLOYED_IDLE_ITEM2"			"ACT_MP_STAND_SECONDARY"
+					"ACT_MP_CROUCH_DEPLOYED_IDLE_ITEM2"		"ACT_MP_CROUCH_SECONDARY"
+					
+					"ACT_MP_DEPLOYED_ITEM2"					"ACT_MP_RUN_SECONDARY"
+					"ACT_MP_CROUCHWALK_DEPLOYED_ITEM2"		"ACT_MP_CROUCHWALK_SECONDARY"
+					
+					"ACT_MP_RELOAD_STAND_ITEM2"				"ACT_MP_RELOAD_STAND_SECONDARY"
+					"ACT_MP_RELOAD_CROUCH_ITEM2"			"ACT_MP_RELOAD_STAND_SECONDARY"
+					
+					"ACT_MP_GESTURE_VC_FINGERPOINT_ITEM2"	"ACT_MP_GESTURE_VC_FINGERPOINT_SECONDARY"
+					"ACT_MP_GESTURE_VC_FISTPUMP_ITEM2"		"ACT_MP_GESTURE_VC_FISTPUMP_SECONDARY"
+					"ACT_MP_GESTURE_VC_HANDMOUTH_ITEM2"		"ACT_MP_GESTURE_VC_HANDMOUTH_SECONDARY"
+					"ACT_MP_GESTURE_VC_THUMBSUP_ITEM2"		"ACT_MP_GESTURE_VC_THUMBSUP_SECONDARY"
+				}
+			}
+
+		}
+		"6674"
+		{
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_revolver"
+			"item_type_name"			"#TF_Weapon_SMG"
+			"item_name"					"S.T.E.N."
+			"item_description"			"Scout's Tool: Entirely New"
+			"item_slot"					"primary"
+			"item_iconname"				"sten"
+			"anim_slot"					"item2"
+			"item_quality"				"unique"
+			"propername"				"0"
+			"image_inventory"			"backpack/weapons/cwp/w_stenh/stenh"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_world"				"models/weapons/cwp/w_stenh/w_stenh.mdl"
+			"model_player"				"models/weapons/cwp/sten/v_sten_fix.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt01_vocal01"
+				"min_viewmodel_offset"					"10 0 -10"
+				"fire rate penalty hidden"				"0.17"
+				//"clip size penalty HIDDEN"				"5"
+				"clip size penalty HIDDEN"				"6"
+				"damage bonus hidden"					"0.42"
+				"spread penalty CUSTOM HIDDEN"			"1.1"
+				//"hidden primary max ammo bonus"			"3.75"
+				"hidden primary max ammo bonus"			"4.59"
+				//"reload time increased hidden"			"1.25"
+				"reload time increased hidden"			"1.1"
+				"crit mod disabled CUSTOM HIDDEN"		"0"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Stenh.Single"
+				"sound_burst"		"Weapon_Stenh.SingleCrit"
+			}
+			"mouse_pressed_sound"	"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"#ui/item_heavy_gun_drop.wav"
+		}
+		"6680"
+		{
+"item_description"
+"HOLDING alt-fire: fuses a bomb and keeps it inside the bag - until you throw it
+
+'Hold it... hold it... NOW!'"
+			"name"				"tf_weapon_cannon"
+			"item_class"		"tf_wearable"
+			"item_logname"		"bomb"
+			"item_iconname"		"degroot_reserve"
+			"show_in_armory"	"1"
+			"item_type_name"	"Bombs"
+			"item_name"			"Degroot Reserve"
+			"item_slot"			"secondary"
+			"equip_region"		"back"
+			"anim_slot"			"FORCE_NOT_USED"
+			"image_inventory"	"backpack/weapons/cwp/sack/sack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"60"			
+			"model_player"		"models/weapons/cwp/sack/sack_attachments.mdl"
+			//"extra_wearable" 	"models/weapons/cwp/sack/sack_attachments.mdl"
+			"attach_to_hands"	"0"
+			"item_quality"		"unique"
+			"propername"		"0"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"			"1"
+				}
+			
+			}
+			"used_by_classes"
+			{
+				"demoman"				"1"
+			}
+			//"static_attrs"
+			//{
+			//	"effect bar recharge rate increased"	"0.1"
+			//	"maxammo grenades1 increased"	"0"
+			//}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"			
+		}
+		"6677"
+		{
+"item_description"
+"No disguise loss on backstabs
+
+BACKSTAB: Silently injects lethal dose of poison with delayed effect
+
+FRONTSTAB: Shakes victim's view and applies minor poisoning"
+			"name"						"tf_weapon_spyringe"
+			"item_class"				"tf_weapon_knife"
+			"item_type_name"			"Poison"
+			"item_name"					"Last Vaccination"
+			"item_slot"					"melee"
+			"item_quality"				"unique"
+			"item_iconname"				"last_vaccination"
+			"image_inventory"			"backpack/weapons/cwp/spyringe/spyringe"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_player"				"models/weapons/cwp/v_spyringe/v_spyringe_f.mdl"
+			"model_world" 				"models/weapons/cwp/c_spyringe/c_spyringe.mdl"
+			"attach_to_hands"			"2"
+			"show_in_armory" 			"1"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"5 0 -4"
+				
+				"keep disguise CUSTOM HIDDEN" 			"1"
+				"view punch on hit CUSTOM HIDDEN" 		"1"
+				"damage bonus hidden"					"0.5"
+			}
+			"visuals"
+			{
+				"sound_melee_hit"		"Weapon_Spyringe.h"
+				"sound_melee_miss"      "Weapon_Spyringe.h"
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"7050"
+        {
+            "prefab" 			"weapon_syringegun"
+            "item_name"         "Overdose MK II"
+			"item_description"	"Heavier dosage"
+			//"item_type_name" 	"Medical Shotgun"
+            "show_in_armory" 	"1"
+			"item_iconname"     "overdose_mk_ii"
+			//"model_player"  	"models/weapons/cwp/c_msgm/v_msgm.mdl"
+			//"model_player"  	"models/weapons/cwp/overdose/v_overdose.mdl"
+			"model_player"  	"models/weapons/cwp/overdose/v_overdose_oneway.mdl"
+			"model_world"  		"models/weapons/cwp/overdose/c_overdose.mdl"
+			//"model_world"    	"models/weapons/cwp/c_msgm/c_msgm.mdl"
+			"image_inventory" 	"backpack/weapons/cwp/shatgen/shatgen"
+			"attach_to_hands" 	"2"
+			"item_quality"		"unique"
+            "static_attrs"
+            {
+                "spread penalty CUSTOM HIDDEN"  "0.0"
+                "maxammo primary reduced CUSTOM HIDDEN" "0.214"
+                "damage bonus hidden" 			"0.5"
+                "fire rate penalty hidden"      "4.34"
+                "clip size penalty hidden"      "0.1"
+				"override projectile type"      "2"
+				"min_viewmodel_offset"			"10 0 -10"
+            }
+            "visuals"
+            {
+                "sound_single_shot"   			"Weapon_Syrt.Single"
+                "sound_burst"        			"Weapon_Syrt.SingleCrit"
+            }
+        }
+		"7051"
+        {
+"item_description"
+"Chain reaction: bolt detonation
+triggers other bolts nearby
+
+Carrier: bolts stick to enemies on direct hits"
+            "prefab" 						"weapon_grenade_launcher"
+            "item_name"                    	"Explosive Crossbow"
+			"item_type_name"				"Crossbow"
+			"item_quality"					"unique"
+			"item_iconname"					"explosive_crossbow"
+            "show_in_armory" 				"1"
+			"attach_to_hands" 				"2"
+			"model_world"             		"models/weapons/cwp/c_cwcross/c_cwcross.mdl"
+			"model_player"					"models/weapons/cwp/crossbow/v_crossbow_fix.mdl"
+			"image_inventory" 				"backpack/weapons/cwp/crossbow/crossbow"
+            "used_by_classes"
+            {
+                "demoman" "1"
+            }
+            "static_attrs"
+            {
+                "damage bonus hidden" 			"0.2"
+                //"clip size penalty hidden"	"0.75"
+				"fire rate penalty hidden"		"0.7"
+				"maxammo primary reduced CUSTOM HIDDEN"	"1.5"
+				"override projectile type"      "30"
+				"min_viewmodel_offset"			"10 0 -10"
+				//"custom projectile model"    	"models/weapons/w_models/w_arrow.mdl"
+				"custom projectile model"    	"models/weapons/cwp/crossbow/bolt.mdl"
+				"class select override vcd"		"taunt01"
+				
+				//"Reload time increased CUSTOM HIDDEN" "0.87"
+            }
+			"visuals"
+			{
+				"sound_single_shot"				"Weapon_Dxbow.Single"
+				"sound_burst"					"Weapon_Dxbow.SingleCrit"
+				"sound_reload"					"Weapon_CompoundBow.SinglePull"
+			}
+        }
+		"7052"
+		{
+			"name"						"TF_WEAPON_SNAP"
+			"prefab"					"weapon_pistol"
+			"item_name"					"Whipper-Snapper"
+			"item_type_name"			"#TF_Weapon_Nailgun"
+			"item_iconname"             "whipper_snapper"
+			"item_quality"				"unique"	
+			"item_description"			"
+All them nails are gonna go to ya skull."
+			"image_inventory"			"backpack/weapons/cwp/nailhandgun/nailhandgun"
+			"model_player"				"models/weapons/cwp/handynail/c_handynail.mdl"
+			"attach_to_hands"			"1"
+			"show_in_armory" 			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				//"Projectile speed increased hidden"	"1.4"
+				"override projectile type" 			"29"
+				"damage bonus"						"1.15"
+				"weapon spread bonus"				"0.5"
+				//"clip size penalty"					"0.7"
+				"fire rate penalty" 				"1.25"
+				"min_viewmodel_offset"				"10 0 -10"
+			}
+			"visuals"
+			{
+				"sound_reload"				"Weapon_NailGun.Reload"
+				"sound_empty"				"Weapon_NailGun.ClipEmpty"	
+				"sound_single_shot"			"Weapon_snap.Single"
+				"sound_burst"				"Weapon_snap.SingleCrit"
+			}
+		}
+		"7053"
+		{
+			"name"						"TF_WEAPON_SNAP"
+			"prefab"					"weapon_pistol"
+			"item_name"					"Whipper-Snapper"
+			"item_type_name"			"#TF_Weapon_Nailgun"
+			"item_iconname"             "whipper_snapper"
+			"item_quality"				"unique"	
+			"item_description"			"
+Construction is on this man's agenda!"
+			"image_inventory"			"backpack/weapons/cwp/nailhandgun/nailhandgun"
+			"model_player"				"models/weapons/cwp/handynail/c_handynail.mdl"
+			"attach_to_hands"			"1"
+			"show_in_armory" 			"1"
+			"used_by_classes"
+			{
+				"engineer" 				"1"
+			}
+			"static_attrs"
+			{
+				//"Projectile speed increased hidden"	"1.4"
+				"override projectile type" 			"29"
+				"damage bonus"						"1.15"
+				"weapon spread bonus"				"0.5"
+				//"clip size penalty"					"0.7"
+				"fire rate penalty" 				"1.25"
+				"min_viewmodel_offset"				"10 0 -10"
+			}
+			"visuals"
+			{
+				"sound_reload"				"Weapon_NailGun.Reload"
+				"sound_empty"				"Weapon_NailGun.ClipEmpty"	
+				"sound_single_shot"			"Weapon_snap.Single"
+				"sound_burst"				"Weapon_snap.SingleCrit"
+			}
+		}
+		"7060"
+        {
+"item_description"
+"Healing scales with patient's max health
+
+Enemies can destroy placed medicines
+by touching it
+
+ALT-FIRE: notifies injured allies
+if there's a medicine near them"
+			"name"						"tf_weapon_medlayer"
+            "prefab"                    "weapon_pistol"
+            "show_in_armory"            "1"
+            "item_name"                 "Salutary Serum"
+            "item_logname"              "medlayer"
+            "item_iconname"             "0"
+            "item_type_name"            "Medicine Dispenser"
+			"item_quality" 				"unique"
+            "propername"                "0"
+            "image_inventory"           "backpack/weapons/cwp/healer/healer"
+            "model_world"               "models/weapons/cwp/healer/c_healer.mdl"
+            "model_player"              "models/weapons/cwp/healer/v_healer.mdl"
+            "attach_to_hands"           "2"
+            "anim_slot" 				"primary"			
+			"extra_wearable" 			"models/weapons/cwp/healer/serum_pack.mdl"
+			"equip_region"				"medigun_backpack"
+            "used_by_classes"
+            {
+                "medic" "1"
+            }
+            "static_attrs"
+            {
+                //"damage bonus" 									"0.0"
+                //"projectile speed increased hidden"             	"0.4"
+                //"sticky fizzles" 									"1"
+                //"blast dmg to self increased CUSTOM HIDDEN"       "0"
+                //"self dmg push force decreased CUSTOM HIDDEN"    	"0"
+				"maxammo secondary reduced CUSTOM HIDDEN"			"0.24"
+                "override projectile type"                			"3"
+				"clip size penalty hidden"							"0.5"
+				"fire rate penalty hidden"							"3.5"
+				"Reload time increased CUSTOM HIDDEN"  				"1.25"
+				"class select override vcd"							"taunt02_v1"
+            }
+            "visuals"
+            {
+                "sound_single_shot"     "Weapon_healer.Single"
+                "sound_burst"           "Weapon_healer.Single"
+                "sound_reload"        	"Weapon_healer.ReloadWorld"
+				//"player_bodygroups"
+				//{
+				//	"medic_backpack"			"1"
+				//}
+            }
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+        }
+		"7061"
+		{
+"item_description"
+"
+Sphere must be detonated manually:
+alt-fire OR shoot another sphere
+
+Spheres sleep for a short time after spawn"
+			"item_class"				"tf_weapon_rocketlauncher"
+			"item_name"                 "Airburster"
+			"item_slot"					"primary"
+			"item_quality"				"unique"
+			"item_iconname"				"airburster"
+			"item_type_name"			"Energy Weapon"
+			"show_in_armory" 			"1"
+			"image_inventory"			"backpack/weapons/cwp/airb/airb"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_player"				"models/weapons/cwp/c_airb/c_airb.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"static_attrs"
+			{
+				"mod max primary clip override" "-1"
+				"fire rate bonus"				"0.75"
+				//"sticky air burst mode" 		"2"
+				
+				"min_viewmodel_offset"			"10 -3 -10"
+				"class select override vcd"		"taunt01_v1"
+				//"class select override vcd"		"class_select_shotgun"
+			}
+			"visuals"
+            {
+                "sound_single_shot"     "Weapon_airb.Single"
+				"sound_burst"           "Weapon_airb.crit"
+				"sound_special1"		"Weapon_airb.Explode"
+            }
+			"mouse_pressed_sound"		"#ui/item_taser_pickup.wav"
+			"drop_sound"				"#ui/item_taser_drop.wav"
+		}
+		"7062"
+		{
+"item_description"
+"Holding ALT-FIRE: launches grappling hook that pushes you toward the enemy you hit
+
+Release ALT-FIRE to holster launched hook"
+			"item_name"			"Hookshot"
+			"prefab"			"weapon_shotgun"
+			"item_slot"			"primary"
+			"item_iconname"		"hookshot"
+			"image_inventory"	"backpack/weapons/cwp/hookshot/hookshot"
+			"model_player" 		"models/weapons/cwp/hooks/v_supershotgun_doom.mdl"
+			"model_world" 		"models/weapons/cwp/hooks/w_supershotgun_doom.mdl"
+			"item_quality"		"unique"
+			"show_in_armory" 	"1"
+			"attach_to_hands" 	"2"
+			"used_by_classes"
+			{
+				"engineer" 		"1"
+			}
+			"anim_slot" "secondary"
+			"static_attrs"
+            {
+				"provide on active CUSTOM HIDDEN"		"1"
+				"fire rate penalty hidden"				"0.56"
+				"clip size penalty hidden"				"0.33"
+				"scattergun no reload single"			"1"
+				"Reload time increased CUSTOM HIDDEN"	"3.7"
+			}
+			"visuals"
+            {
+                "sound_single_shot"     "Weapon_ssg.Single"
+                "sound_burst"           "Weapon_ssg.SingleCrit"
+                "sound_reload"          "Weapon_ssg.WorldReload"
+            }
+		}
+		"7063"
+		{
+"item_description"
+"
+CROUCH to scope-in: more damage,
+less falloff over distance, faster reload
+
+While scoped-in, any taken damage is lethal"
+			"item_class"				"tf_weapon_revolver"
+			"item_type_name"			"Energy Weapon"
+			"item_name"					"Pocket Accelerator"
+			"item_slot"					"primary"
+			"item_iconname"				"pocket_accelerator"
+			"anim_slot"					"secondary"
+			"item_quality"				"unique"
+			"image_inventory"			"backpack/weapons/cwp/railver/railver"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_player"				"models/weapons/cwp/c_rail/c_rail.mdl"
+			"attach_to_hands"			"1"
+			"show_in_armory" 			"1"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"static_attrs"
+            {	
+				"min_viewmodel_offset" "10 0 -6"
+				
+				"clip size penalty hidden"	"0.33"
+				"weapon spread bonus" 		"0.0"		
+				"damage bonus hidden" 		"0.1"
+				"ragdolls become ash"		"1"
+				"bullets per shot bonus CUSTOM HIDDEN" "10"
+			}
+			"visuals"
+            {
+                "sound_single_shot"     "Weapon_rail.Single"
+				"sound_burst"           "Weapon_rail.crit"
+            }
+			"mouse_pressed_sound"		"#ui/item_taser_pickup.wav"
+			"drop_sound"				"#ui/item_taser_drop.wav"
+		}
+		"7064"
+		{
+			"item_class"				"tf_weapon_smg"
+			"item_type_name"			"Carbine"
+			"item_name"					"Carbine"
+			"item_iconname"				"carbine_new"
+			"item_slot"					"secondary"
+			"item_description"			"Aim, shoot, repeat"
+			"item_quality"				"unique"
+			"show_in_armory" 			"1"
+			"image_inventory"			"backpack/weapons/cwp/carbine/carbine"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_world"				"models/weapons/cwp/carbine/c_carbine_spyrifle.mdl"
+			"model_player"				"models/weapons/cwp/carbine/v_carbine_spyrifle.mdl"
+			"attach_to_hands"			"2"
+			"propername" 				"0"
+			"anim_slot"					"primary"
+			"used_by_classes"
+			{
+				"sniper"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"						"10 0 -7"
+				"maxammo secondary reduced CUSTOM HIDDEN"	"0.32"
+				"spread penalty CUSTOM HIDDEN" 				"0.4"
+				"damage bonus hidden" 						"3"
+				"fire rate bonus hidden"					"2.42"
+				"clip size penalty hidden" 					"0.32"
+				"Reload time increased CUSTOM HIDDEN"		"1.28"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_carbine.Single"
+				"sound_burst"			"Weapon_carbine.SingleCrit"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_STAND_SECONDARY_DEPLOYED"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_CROUCH_SECONDARY_DEPLOYED"
+					"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_SWIM_SECONDARY_DEPLOYED"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_STAND_SECONDARY_DEPLOYED"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_CROUCH_SECONDARY_DEPLOYED"
+					"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_SWIM_SECONDARY_DEPLOYED"
+					
+					"ACT_MP_ATTACK_STAND_PRIMARY"				"ACT_MP_ATTACK_STAND_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"				"ACT_MP_ATTACK_CROUCH_SECONDARY"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"				"ACT_MP_ATTACK_SWIM_SECONDARY"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY"				"ACT_MP_RELOAD_STAND_SECONDARY"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY"				"ACT_MP_RELOAD_CROUCH_SECONDARY"
+					"ACT_MP_RELOAD_SWIM_PRIMARY"				"ACT_MP_RELOAD_SWIM_SECONDARY"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		"7070"
+		{
+"item_description"
+"Only owner can trigger young pumpkins.
+Anyone can trigger mature pumpkins.
+
+If triggered by enemy, pumpkin
+deals no damage to anyone
+
+Direct hit deals impact damage
+but doesn't cause explosion by itself"
+			"item_class"				"tf_weapon_grenadelauncher"
+			"item_type_name"			"Exotic Plant Spawner"
+			"item_name"					"Pumpkin Action"
+			"item_logname"				"pumpkin_action"
+			"item_iconname"				"pumpkin_action"
+			"prefab"					"weapon_grenade_launcher"
+			"model_player"				"models/weapons/cwp/pumpkins/v_pumpshotty_multishot.mdl"
+			"model_world" 				"models/weapons/cwp/pumpkins/c_pumpshotty.mdl"
+			"image_inventory" 			"backpack/weapons/cwp/pumpkin_action/pumpkin_action"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			//"item_slot"					"primary"
+			//"anim_slot"					"primary"
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"class select override vcd"		"taunt01"
+				
+				//"reload time increased hidden"			"0.37"
+				//"clip size penalty HIDDEN" 				"1500"
+				//"fire rate penalty hidden" 				"1"
+				//"maxammo primary reduced CUSTOM HIDDEN" 	"1.25"
+				"override projectile type"          		"3"
+				//"fire rate bonus hidden"					"0.7"
+				//"reload time increased hidden"			"1.15"
+				//"maxammo primary reduced CUSTOM HIDDEN"	"1.125"
+			}
+			
+			"visuals"
+			{
+				"sound_single_shot"						"Weapon_PumpkinAction.Single"
+				"sound_burst" 							"Weapon_PumpkinAction.SingleCrit"
+				"sound_reload" 							"Weapon_PumpkinAction.WorldReload"
+			}
+		}
+		"7071"
+		{
+"item_description"
+"Cloak additionally provides:
+1) ability to use primary weapon,
+2) huge movespeed bonus.
+
+While inside smokescreen:
+1) cloak charge doesn't get drained,
+2) invisibility reapplies after firing.
+
+Smokescreen can be activated only at full charge and cannot be refilled while active"
+			"prefab"					"weapon_invis"
+			"item_type_name"			"Smoke Bomb"
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_name"					"Smokescreen"
+			"image_inventory" 			"backpack/weapons/cwp/smokescreen/smokescreen"
+			"attach_to_hands"			"0"
+			"model_player"				"models/weapons/cwp/smokescreen/smokescreen_watch_noanim.mdl"
+			//"model_player"				"models/weapons/cwp/smokescreen/v_throw.mdl"
+			//"model_player"				"models/weapons/v_models/v_watch_spy.mdl"
+			"static_attrs"
+			{
+				"mult cloak meter consume rate CUSTOM HIDDEN"	"4.165"
+				//"mult cloak meter regen rate CUSTOM HIDDEN"	"6"
+				"mult cloak meter regen rate CUSTOM HIDDEN"		"6.5"
+				"mult decloak rate CUSTOM HIDDEN"				"0.01"
+				//"mult decloak rate CUSTOM HIDDEN"				"0.4"
+				"mult cloak rate CUSTOM HIDDEN"					"-2"
+				"move speed bonus while cloaked CUSTOM HIDDEN"	"1.75"
+				"set cloak is speed CUSTOM HIDDEN"				"3"
+			}
+			"visuals"
+			{
+				//"sound_deploy"			"Player.Spy_SpeedCloak"
+				//"sound_empty"			"Player.Spy_SpeedUnCloak"
+			}
+			"mouse_pressed_sound"		"#ui/item_bottle_pickup.wav"
+			"drop_sound"				"#ui/item_sandwich_pickup.wav"
+		}
+		"7072"
+		{
+"item_description"
+"Primary attack: fuses powerful explosive device which is attached to your body
+
+Fused device gets disarmed if owner dies
+
+Blast wave can propagate through walls
+with reduced damage"
+			"prefab"					"weapon_knife"
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_name"					"Red Button"
+			"item_type_name"			"Suicide Vest"
+			"model_world"				"models/weapons/cwp/selfdet/c_mini_sapper.mdl"
+			"model_player"				"models/weapons/cwp/selfdet/v_mini_sapper.mdl"
+			"image_inventory" 			"backpack/weapons/cwp/red_button/red_button"
+			"attach_to_hands"			"2"
+			"anim_slot"					"building"			
+			//"extra_wearable" 			"models/expl/expl.mdl"
+			"item_logname"				"red_button"
+			"item_iconname"				"red_button"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"5 -2 -4"
+				"class select override vcd"		"taunt04_v5"
+				"melee range multiplier"		"0"
+			}
+			"visuals"
+			{
+				"sound_melee_hit"		"Weapon_Spyringe.h"
+				"sound_melee_miss"      "Weapon_Spyringe.h"
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"7073"
+		{
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_name"					"Shredder"
+			"item_type_name"			"#TF_weapon_shotgun"
+			"item_description"			"Make a sieve out of 'em"
+			"item_class"				"tf_weapon_shotgun"
+			"item_slot"					"primary"
+			"item_logname"				"shredder"
+			"item_iconname"				"shredder"
+			"model_world"				"models/weapons/cwp/aa12/c_aa12.mdl"
+			"model_player"				"models/weapons/cwp/aa12/v_aa12.mdl"
+			"attach_to_hands"			"2"
+			"anim_slot"					"primary"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/cwp/shredder/shredder"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			//"extra_wearable" 			"models/weapons/cwp/gunsniper_wearable/gunsniper_wearable.mdl"
+			//"extra_wearable" 			"models/weapons/cwp/sniperwear/wearable.mdl"
+			
+			//"extra_wearable" 			"models/weapons/cwp/sniperwear/commando_wearable.mdl"
+			
+			"extra_wearable" 			"models/weapons/cwp/sniperwear/wearable.mdl"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"class select override vcd"				"taunt02_v1"
+				"damage bonus hidden"					"0.5"
+				"fire rate penalty hidden"				"0.48"
+				"bullets per shot bonus CUSTOM HIDDEN"	"2"
+				//"scattergun no reload single"			"1"
+				//"Reload time increased CUSTOM HIDDEN"	"1.2"
+				"spread penalty CUSTOM HIDDEN"			"1.75"
+				
+				//"clip size penalty HIDDEN"				"5" //30
+				"mod max primary clip override" 			"-1" //40
+				
+				//"hidden primary max ammo bonus"			"2.8125" //30
+				"hidden primary max ammo bonus"			"0.625" //40
+			}
+			"visuals"
+			{
+				//"sound_empty"			"Weapon_Smg.ClipEmpty"	
+				"sound_single_shot"		"Weapon_aa12.Single"
+				"sound_burst"			"Weapon_aa12.SingleCrit"
+				//"sound_reload"			"Weapon_Smg.WorldReload"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_STAND_SECONDARY_DEPLOYED"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_CROUCH_SECONDARY_DEPLOYED"
+					"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_SWIM_SECONDARY_DEPLOYED"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_STAND_SECONDARY_DEPLOYED"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_CROUCH_SECONDARY_DEPLOYED"
+					"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_SWIM_SECONDARY_DEPLOYED"
+					
+					"ACT_MP_ATTACK_STAND_PRIMARY"				"ACT_MP_ATTACK_STAND_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"				"ACT_MP_ATTACK_CROUCH_SECONDARY"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"				"ACT_MP_ATTACK_SWIM_SECONDARY"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY"				"ACT_MP_RELOAD_STAND_SECONDARY"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY"				"ACT_MP_RELOAD_CROUCH_SECONDARY"
+					"ACT_MP_RELOAD_SWIM_PRIMARY"				"ACT_MP_RELOAD_SWIM_SECONDARY"
+				}
+				"player_bodygroups"
+				{
+					//"backpack"			"1"
+					"hat"			"1"
+				}	
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"7080"
+		{
+			"item_type_name"			"Rifle"
+			"item_name"					"Bolt-Action Rifle"
+			"item_class"				"tf_weapon_shotgun_soldier"
+			"item_quality"				"unique"
+			"item_iconname"				"bolt_action_rifle"
+			"item_description"			"Old, reliable"
+			"item_slot"					"secondary"
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/cwp/bolt_action/bolt_action"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_world"				"models/weapons/cwp/bolt_action/c_bolt_action.mdl"
+			"model_player"				"models/weapons/cwp/bolt_action/v_bolt_action.mdl"
+			"attach_to_hands"			"2"
+			"show_in_armory"			"1"
+			"anim_slot"					"secondary"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"5 -2 -10"
+				
+				"spread penalty CUSTOM HIDDEN"	"0.0"
+				"fire rate penalty hidden"		"1.8"
+				"clip size penalty HIDDEN"      "0.83"
+				"damage bonus hidden"			"0.835"
+				
+				"maxammo secondary reduced CUSTOM HIDDEN"	"0.47"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Boltaction.Single"
+				"sound_burst"			"Weapon_Boltaction.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}		
+		"7081"
+		{				
+"item_description" "Both modes (ray / fireballs) electrify and ignite enemies for a short time
+
+Electrified enemies are marked for death and take full crits from any melee damage
+
+Fireballs destroy projectiles. Thunderclap from spawning a fireball extinguishes allies"
+			"item_class"				"tf_weapon_nailgun"
+			"item_type_name"			"Energy Weapon"
+			"item_name"					"Lightning Gun"
+			"item_slot"					"primary"
+			"item_quality"				"unique"
+			
+			"show_in_armory"			"1"
+			//"baseitem" "1"
+			
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/cwp/lgun/lgun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"mouse_pressed_sound"		"#ui/item_taser_pickup.wav"
+			"drop_sound"				"#ui/item_taser_drop.wav"
+			
+			"item_iconname"				"lightning_gun"
+			
+			"anim_slot"					"secondary"
+
+			//"model_world"				"models/weapons/cwp/thermblower/c_thermblower.mdl"
+			"model_world"				"models/weapons/cwp/lgun/w_lgun.mdl"
+			//"model_player"				"models/weapons/cwp/thermblower/v_thermblower.mdl"
+			"model_player"				"models/weapons/cwp/lgun/v_lgun.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"static_attrs"
+			{				
+				"min_viewmodel_offset"		"10 0 -12"
+				"class select override vcd"	"taunt02"
+				
+				"clip size penalty HIDDEN"					"0.8"
+				//"mod max primary clip override" 			"-1"
+				"maxammo primary reduced CUSTOM HIDDEN"		"1.44"
+				
+				"fire rate penalty HIDDEN"					"0.42"//"0.8"
+				//"fire rate penalty HIDDEN"					"0.69565217391"//"0.8"
+				
+				//"damage bonus hidden" 						"0.4"//"0.33"
+				"damage bonus hidden" 						"0.483"//"0.33"
+				//"damage bonus hidden" 						"0.77777"
+				
+				
+				"dmg penalty vs buildings CUSTOM HIDDEN"	"1.5"
+				"override projectile type"					"1"
+				//"weapon burn time increased"				"0.2"
+				"spread penalty CUSTOM HIDDEN"				"0"
+				"Projectile range decreased CUSTOM HIDDEN"	"0.05"
+				"ragdolls become ash"						"1"
+				//"Reload time increased CUSTOM HIDDEN"		"0.5"
+				"Reload time increased CUSTOM HIDDEN"		"0.35"
+				//"Set DamageType Ignite"					"1"
+			}			
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Lgun.Single"
+				"sound_burst"			"Weapon_Lgun.SingleCrit"
+				"sound_empty"			"Weapon_Spyringe.h"
+				"sound_reload"			"Weapon_Spyringe.h"
+				"tracer_effect"			"bullet_scattergun_tracer01"//"bullet_hunting_revolver_tracer01"
+				
+				//"animation_replacement"
+				//{
+				//	"ACT_VM_RELOAD"		"ACT_VM_IDLE"//"ACT_SECONDARY_VM_PRIMARYATTACK"
+				//	"ACT_VM_PRIMARYATTACK"		"ACT_VM_IDLE"
+				//}
+			}
+		}
+		"7082"
+		{
+"item_description"
+"If NOT crouched, jams after a few shots.
+Always jams when user stops firing.
+
+'Pretty light, perhaps missing its part or two. Matters? Nah, it's Just Awfully Minor.'"
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_smg"
+			"item_type_name"			"Light Machine Gun"
+			"item_name"					"J.A.M."
+			"item_slot"					"secondary"
+			"item_iconname"				"jam"
+			"anim_slot"					"primary"
+			"item_quality"				"unique"
+			"propername"				"0"
+			"image_inventory"			"backpack/weapons/cwp/jam/jam"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_world"				"models/weapons/cwp/jam/c_jam.mdl"
+			"model_player"				"models/weapons/cwp/jam/v_jam.mdl"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"fire rate penalty hidden"				"0.8"
+				"clip size penalty HIDDEN"				"0.2"
+				"damage bonus hidden"					"2.16666666667"
+				"spread penalty CUSTOM HIDDEN"			"2.4"
+				"hidden secondary max ammo penalty"			"1.333334"
+				"reload time increased hidden"			"1.25"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Jam.Single"
+				"sound_burst"			"Weapon_Jam.SingleCrit"
+				"sound_reload"			"none"
+				"sound_empty"			"none"
+				
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_STAND_SECONDARY_DEPLOYED"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_CROUCH_SECONDARY_DEPLOYED"
+					"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_SWIM_SECONDARY_DEPLOYED"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_STAND_SECONDARY_DEPLOYED"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_CROUCH_SECONDARY_DEPLOYED"
+					"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_SWIM_SECONDARY_DEPLOYED"
+					
+					"ACT_MP_ATTACK_STAND_PRIMARY"				"ACT_MP_ATTACK_STAND_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"				"ACT_MP_ATTACK_CROUCH_SECONDARY"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"				"ACT_MP_ATTACK_SWIM_SECONDARY"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY"				"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY"				"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED"
+					"ACT_MP_RELOAD_SWIM_PRIMARY"				"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED"
+					
+					"ACT_MP_CROUCH_PRIMARY"						"ACT_MP_CROUCH_DEPLOYED_IDLE"
+					"ACT_MP_CROUCHWALK_PRIMARY"					"ACT_MP_CROUCHWALK_DEPLOYED"
+					
+					"ACT_MP_AIRWALK_PRIMARY"					"ACT_MP_AIRWALK_SECONDARY"
+					//"ACT_MP_JUMP_START_PRIMARY"				"ACT_MP_AIRWALK_SECONDARY"
+					//"ACT_MP_JUMP_FLOAT_PRIMARY"				"ACT_MP_AIRWALK_SECONDARY"
+					//"ACT_MP_JUMP_LAND_PRIMARY"				"ACT_MP_JUMP_LAND_SECONDARY"
+				}				
+			}
+			"mouse_pressed_sound"	"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"#ui/item_heavy_gun_drop.wav"
+		}
+		"7083"
+		{
+"item_description"
+"
+Holding PRIMARY FIRE: launches harpoon which pulls caught enemy towards you
+
+Charge: +range, +dmg from pulling harpoon OUT (also lifesteals and causes bleeding)"
+			"show_in_armory"			"1"
+			"item_quality"				"unique"
+			"item_class"				"tf_weapon_sniperrifle"
+			"item_type_name"			"Harpoon Gun"
+			"item_name"					"Harpoon Gun"
+			"name"						"Harpoon Gun"
+			"item_slot"					"primary"
+			"item_quality"				"normal"
+			"min_ilevel"				"1"
+			"max_ilevel"				"1"
+			"image_inventory"			"backpack/weapons/cwp/harpoon/harpoon"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_world"				"models/weapons/cwp/harpoon/c_harpoon.mdl"
+			"model_player"				"models/weapons/cwp/harpoon/v_harpoon.mdl"
+			"attach_to_hands"			"2"
+			"anim_slot"					"primary"
+			
+			"item_iconname"				"harpoon_gun"
+			"used_by_classes"
+			{
+				"sniper"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"						"10 0 -10"
+				"mod max primary clip override" 			"-1"
+				//"override projectile type"					"16"
+				"SRifle Charge rate increased"				"1.35"
+				"aiming movespeed increased CUSTOM HIDDEN"	"1.5"
+				"bleeding duration CUSTOM HIDDEN"			"2.5"
+				"sniper no headshots"						"1"
+				"Projectile range decreased CUSTOM HIDDEN"	"0.0"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Harpoon.Single"
+				"sound_burst"			"Weapon_Harpoon.SingleCrit"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED_ALT"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED"		"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED_ALT"
+					
+					"ACT_MP_ATTACK_STAND_PRIMARY"				"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"				"ACT_MP_ATTACK_CROUCH_PRIMARY_ALT"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"				"ACT_MP_ATTACK_SWIM_PRIMARY_ALT"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY"				"ACT_MP_RELOAD_STAND_PRIMARY_ALT"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY"				"ACT_MP_RELOAD_CROUCH_PRIMARY_ALT"
+					"ACT_MP_RELOAD_SWIM_PRIMARY"				"ACT_MP_RELOAD_SWIM_PRIMARY_ALT"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"7084"
+		{
+"item_description"
+"
+Can grant mini-crit buff to an ally
+(requires full weapon charge)
+
+Damage scales with the charge"
+			"name"						"Defibrillator"
+			"item_quality"				"unique"
+			"item_class"				"tf_weapon_taser"
+			"item_type_name"			"Defibrillator"
+			"item_name"					"Defibrillator"
+			"item_slot"					"melee"
+			"image_inventory"			"backpack/weapons/cwp/defibrillator/defibrillator"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"show_in_armory"			"1"
+			"item_logname"				"defibrillator"
+			"item_iconname"				"defibrillator"
+			"propername"				"0"
+			"model_world"				"models/weapons/cwp/defibr/w_defibr.mdl"
+			"model_player"				"models/weapons/cwp/defibr/v_defibr.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"melee range multiplier"
+				{
+					"attribute_class"	"melee_range_multiplier"
+					"value"	"1.7"
+				}
+				"melee bounds multiplier"
+				{
+					"attribute_class"	"melee_bounds_multiplier"
+					"value"	"1.55"
+				}
+				"crit mod disabled hidden"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"damage bonus hidden"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.55"
+				}
+				"ragdolls become ash"
+				{
+					"attribute_class"	"ragdolls_become_ash"
+					"value"	"1"
+				}
+				"heal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value"	"0.85"
+				}
+			}
+			"visuals"
+			{
+				"sound_taunt"			"Taunt.MedicViolinUber"
+			}
+			"mouse_pressed_sound"		"#ui/item_taser_pickup.wav"
+			"drop_sound"				"#ui/item_taser_drop.wav"
+		}	
+	}
+
+	"attributes"
+	{
+		"11000"
+		{
+			"name"	"Set DamageType Ignite CUSTOM HIDDEN"
+			"attribute_class"	"set_dmgtype_ignite"
+			"description_string"	"#Attrib_SetDamageType_Ignite"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}			
+		"11001"
+		{
+			"name"	"proximity mines CUSTOM HIDDEN"
+			"attribute_class"	"mod_sticky_is_proxy"
+			"description_string"	"#Attrib_ProximityMine"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"1"
+		}
+		"11002"
+		{
+			"name"	"stickybomb charge rate CUSTOM HIDDEN"
+			"attribute_class"	"stickybomb_charge_rate"
+			"description_string"	"#Attrib_stickybomb_charge_rate"
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"1"
+			"effect_type"	"positive"
+		}
+		"11003"
+		{
+			"name"	"sticky fizzles CUSTOM HIDDEN"
+			"attribute_class"	"mod_sticky_fizzles"
+			"description_string"	"#Attrib_StickyFizzles"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"1"
+		}
+		"11004"
+		{
+			"name"	"max pipebombs decreased CUSTOM HIDDEN"
+			"attribute_class"	"add_max_pipebombs"
+			"description_string"	"#Attrib_MaxPipebombs_Decreased"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11005"
+		{
+			"name"	"blast dmg to self increased CUSTOM HIDDEN"
+			"attribute_class"	"blast_dmg_to_self"
+			"description_string"	"#Attrib_BlastDamageToSelf_Increased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11006"
+		{
+			"name"	"self dmg push force decreased CUSTOM HIDDEN"
+			"attribute_class"	"mult_dmgself_push_force"
+			"description_string"	"#Attrib_SelfDmgPush_Decreased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"armory_Desc"	"on_wearer"
+			"stored_as_integer"	"0"
+		}		
+		"11007"
+		{
+			"name"	"bullets per shot bonus CUSTOM HIDDEN"
+			"attribute_class"	"mult_bullets_per_shot"
+			"description_string"	"#Attrib_BulletsPerShot_Bonus"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		"11008"
+		{
+			"name"	"spread penalty CUSTOM HIDDEN"
+			"attribute_class"	"mult_spread_scale"
+			"description_string"	"#Attrib_Spread_Negative"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11009"
+		{
+			"name"	"Blast radius decreased CUSTOM HIDDEN"
+			"attribute_class"	"mult_explosion_radius"
+			"description_string"	"#Attrib_BlastRadius_Decreased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11010"
+		{
+			"name"	"rocket gravity CUSTOM HIDDEN"
+			"attribute_class"	"mod_rocket_gravity"
+			"description_string"	"#Attrib_RocketGravity"
+			"description_format"	"value_is_additive_percentage"
+			"hidden"	"1"
+			"effect_type"	"neutral"
+			"stored_as_integer"	"0"
+		}		
+		"11011"
+		{
+			"name"	"maxammo secondary reduced CUSTOM HIDDEN"
+			"attribute_class"	"mult_maxammo_secondary"
+			"description_string"	"#Attrib_MaxammoSecondary_Reduced"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"armory_desc"	"on_wearer"
+			"stored_as_integer"	"0"
+		}
+		"11012"
+		{
+			"name"	"explosive bullets CUSTOM HIDDEN"
+			"attribute_class"	"explosive_bullets"
+			"description_string"	"#Attrib_Explosive_Bullets"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		"11013"
+		{
+			"name"	"Construction rate decreased CUSTOM HIDDEN"
+			"attribute_class"	"mult_construction_value"
+			"description_string"	"#Attrib_ConstructionRate_Decreased"
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11014"
+		{
+			"name"	"Repair rate decreased CUSTOM HIDDEN"
+			"attribute_class"	"mult_repair_value"
+			"description_string"	"#Attrib_RepairRate_Decreased"
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11015"
+		{
+			"name"	"upgrade rate decrease CUSTOM HIDDEN"
+			"attribute_class"	"upgrade_rate_mod"
+			"description_string"	"#Attrib_UpgradeRate_Decreased"
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}		
+		"11016"
+		{
+			"name"	"explosive bullets CUSTOM NEUTRAL"
+			"attribute_class"	"explosive_bullets"
+			"description_string"	"#Attrib_Explosive_Bullets"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"neutral"
+			"stored_as_integer"	"0"
+		}
+		"11017"
+		{
+			"name"	"aiming movespeed increased CUSTOM HIDDEN"
+			"attribute_class"	"mult_player_aiming_movespeed"
+			"description_string"	"#Attrib_AimingMoveSpeed_Increased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"armory_Desc"	"on_wearer"
+			"stored_as_integer"	"0"
+		}
+		"11018"
+		{
+			"name"	"Projectile range decreased CUSTOM HIDDEN"
+			"attribute_class"	"mult_projectile_range"
+			"description_string"	"#Attrib_ProjectileRange_Decreased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11019"
+		{
+			"name"	"Projectile speed increased CUSTOM HIDDEN"
+			"attribute_class"	"mult_projectile_speed"
+			"description_string"	"#Attrib_ProjectileSpeed_Increased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		
+		"11020"
+		{
+			"name"	"crit mod disabled CUSTOM HIDDEN"
+			"attribute_class"	"mult_crit_chance"
+			"description_string"	"#Attrib_CritChance_Disabled"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"armory_Desc"	"no_crits"
+			"stored_as_integer"	"0"
+		}
+		"11021"
+		{
+			"name"	"Reload time increased CUSTOM HIDDEN"
+			"attribute_class"	"mult_reload_time"
+			"description_string"	"#Attrib_ReloadTime_Increased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11022"
+		{
+			"name"	"minigun spinup time increased CUSTOM HIDDEN"
+			"attribute_class"	"mult_minigun_spinup_time"
+			"description_string"	"#Attrib_MinigunSpinup_Increased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11023"
+		{
+			"name"	"tranq on hit CUSTOM HIDDEN"
+			"attribute_class"	"mod_tranq_onhit"
+			"description_string"	"#Attrib_TranqOnHit"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		"11024"
+		{
+			"name"	"bleeding duration CUSTOM HIDDEN"
+			"attribute_class"	"bleeding_duration"
+			"description_string"	"#Attrib_BleedingDuration"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"armory_Desc"	"on_hit bleed"
+			"stored_as_integer"	"0"
+		}
+		"11025"
+		{
+			"name"	"dmg penalty vs buildings CUSTOM HIDDEN"
+			"attribute_class"	"mult_dmg_vs_buildings"
+			"description_string"	"#Attrib_DmgVsBuilding_decreased"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+		}
+		"11026"
+		{
+			"name"	"maxammo primary reduced CUSTOM HIDDEN"
+			"attribute_class"	"mult_maxammo_primary"
+			"description_string"	"#Attrib_MaxammoPrimary_Reduced"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"armory_desc"	"on_wearer"
+			"stored_as_integer"	"0"
+		}
+		"11027"
+		{
+			"name"    "building cost reduction HIDDEN"
+			"attribute_class"    "building_cost_reduction"
+			"description_string"    "#Attrib_BuildingCostReduction"
+			"description_format"    "value_is_percentage"
+			"hidden"    "1"
+			"effect_type"    "positive"
+			"stored_as_integer"    "0"
+		}
+		"11028"
+		{
+			"name"	"keep disguise CUSTOM HIDDEN"
+			"attribute_class"		"set_keep_disguise"
+			"description_string"	"#Attrib_KeepDisguise"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"1"
+		}
+		"11029"
+		{
+			"name"	"provide on active CUSTOM HIDDEN"
+			"attribute_class"	"provide_on_active"
+			"description_string"	"#Attrib_ProvideOnActive"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"neutral"
+			"armory_Desc"	"on_active"
+			"stored_as_integer"	"0"
+		}
+		"11030"
+		{
+			"name"	"view punch on hit CUSTOM HIDDEN"
+			"attribute_class"	"add_viewpunch_onhit"
+			"description_string"	"#Attrib_ViewPunchOnHit"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"1"
+		}
+		"11031"
+		{
+			"name"	"mult cloak meter consume rate CUSTOM HIDDEN"
+			"attribute_class"	"mult_cloak_meter_consume_rate"
+			"description_string"	"#Attrib_CloakMeterConsumeRate"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11032"
+		{
+			"name"	"mult cloak meter regen rate CUSTOM HIDDEN"
+			"attribute_class"	"mult_cloak_meter_regen_rate"
+			"description_string"	"#Attrib_CloakMeterRegenRate"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		"11033"
+		{
+			"name"	"mult decloak rate CUSTOM HIDDEN"
+			"attribute_class"	"mult_decloak_rate"
+			"description_string"	"#Attrib_DecloakRate"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		"11034"
+		{
+			"name"	"mult cloak rate CUSTOM HIDDEN"
+			"attribute_class"	"mult_cloak_rate"
+			"description_string"	"#Attrib_CloakRate"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"11035"
+		{
+			"name"	"move speed bonus while cloaked CUSTOM HIDDEN"
+			"attribute_class"	"mult_player_movespeed_cloaked"
+			"description_string"	"#Attrib_MoveSpeed_Bonus_Cloaked"
+			"description_format"	"value_is_percentage"
+			"hidden"	"1"
+			"effect_type"	"positive"
+			"armory_Desc"	"on_wearer"
+			"stored_as_integer"	"0"
+		}
+		"11036"
+		{
+			"name"	"set cloak is speed CUSTOM HIDDEN"
+			"attribute_class"	"set_weapon_mode"
+			"description_string"	"#Attrib_CloakIsSpeed"
+			"description_format"	"value_is_additive"
+			"hidden"	"1"
+			"effect_type"	"neutral"
+			"armory_Desc"	"cloak_type"
+			"stored_as_integer"	"0"
+		}
+	}
+}
